@@ -1,7 +1,7 @@
 package HTML::Barcode;
-use Mouse;
+use Any::Moose;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 has 'text' => (
     is  => 'rw',
@@ -269,4 +269,5 @@ See http://dev.perl.org/licenses/ for more information.
 
 =cut
 
+no Any::Moose;
 1; # End of HTML::Barcode
