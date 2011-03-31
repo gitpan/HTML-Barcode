@@ -1,0 +1,13 @@
+test.pl
+blib
+Makefile$
+Makefile.old$
+MANIFEST.bak
+MANIFEST.SKIP~
+pm_to_blib
+cover_db
+pod2htm
+HTML-Barcode-*
+.git/
+^.gitignore
+.swp$
