@@ -24,8 +24,9 @@ recommends:
   Text::QRCode: 0
 requires:
   Any::Moose: 0
+  Barcode::Code93: 0
   Mouse: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/mstratman/HTML-Barcode
-version: 0.06
+version: 0.07
