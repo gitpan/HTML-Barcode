@@ -1,7 +1,7 @@
 package HTML::Barcode;
 use Any::Moose;
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 has 'text' => (
     is  => 'rw',
@@ -232,7 +232,7 @@ Feel free to override any other methods, or use method modifiers
 
 =head2 new (%attributes)
 
-Default constructor provided by L<Mouse>, which can take values for
+Default constructor provided by L<Moose> or L<Mouse>, which can take values for
 any of the L<attributes|/ATTRIBUTES>.
 
 =head2 render

@@ -2,14 +2,12 @@
 abstract: 'Render HTML representations of barcodes'
 author:
   - 'Mark A. Stratman, C<< <stratman@gmail.com> >>'
-  - 'Mark A. Stratman <stratman@gmail.com>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
-  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 1.00'
+generated_by: 'Module::Install version 1.01'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -19,14 +17,13 @@ no_index:
   directory:
     - inc
     - t
-recommends:
-  Barcode::Code128: 0
-  Text::QRCode: 0
 requires:
   Any::Moose: 0
-  Barcode::Code93: 0
-  Mouse: 0
 resources:
+  homepage: http://github.com/mstratman/HTML-Barcode/tree
   license: http://dev.perl.org/licenses/
-  repository: https://github.com/mstratman/HTML-Barcode
-version: 0.08
+  repository:
+    type: git
+    url: git://github.com/mstratman/HTML-Barcode.git
+    web: http://github.com/mstratman/HTML-Barcode/tree
+version: 0.09

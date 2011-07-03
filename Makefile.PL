@@ -3,22 +3,16 @@ use warnings;
 use inc::Module::Install;
 
 name     'HTML-Barcode';
-all_from 'lib/HTML/Barcode.pm';
-author   q{Mark A. Stratman <stratman@gmail.com>};
 license  'perl';
+all_from 'lib/HTML/Barcode.pm';
 
-requires 'Mouse';
 requires 'Any::Moose';
-requires 'Barcode::Code93';
 
-recommends 'Barcode::Code128'; # We will require this once 2.02 is out, fixing the broken tests.
-recommends 'Text::QRCode'; # we don't want to require this, since it needs libqrencode
+test_requires 'Test::More';
+tests 't/*.t';
+author_tests 'xt';
 
-build_requires 'Test::More';
-
-#auto_install;
-
-resources repository => 'https://github.com/mstratman/HTML-Barcode';
-
+githubmeta;
+auto_include;
+auto_install;
 WriteAll;
-
