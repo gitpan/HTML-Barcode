@@ -1,7 +1,7 @@
 package HTML::Barcode;
 use Any::Moose;
 
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 has 'text' => (
     is  => 'rw',
@@ -192,6 +192,8 @@ Others may exist, so try searching CPAN.
 =over 4
 
 =item L<HTML::Barcode::QRCode> - Two dimensional QR codes.
+
+=item L<HTML::Barcode::DataMatrix> - Two dimensional Data Matrix barcodes.
 
 =item L<HTML::Barcode::Code93> - Code 93 barcodes.
 
